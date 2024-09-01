@@ -1,0 +1,23 @@
+_BASE_: "../Base.yaml"
+
+DATASETS:
+  TRAIN: ("mpsc_train",)
+  TEST: ("mpsc_test",)  
+
+MODEL:
+  WEIGHTS: "output/r_50_poly/pretrain/model_final.pth"  # or the provided pre-trained model
+
+SOLVER:
+  IMS_PER_BATCH: 1 # 8
+  BASE_LR: 5e-5
+  LR_BACKBONE: 5e-6
+  WARMUP_ITERS: 0
+  STEPS: (16000,)
+  MAX_ITER: 20000
+  CHECKPOINT_PERIOD: 20000
+
+TEST:
+  EVAL_PERIOD: 1000
+  DET_ONLY: True
+
+OUTPUT_DIR: "output/r_50_poly/MPSC/debug"

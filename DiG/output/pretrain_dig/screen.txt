@@ -1,0 +1,12 @@
+Creating model: pretrain_simmim_moco_ori_vit_small_patch4_32x128
+using moco branch.
+using mim branch.
+Patch size = (4, 4)
+Data Aug = (DataAugmentationForBEiT,
+  transform = Compose(
+    Resize(size=(32, 128), interpolation=bicubic, max_size=None, antialias=None)
+    ToTensor()
+    Normalize(mean=0.5, std=0.5)
+),
+  Masked position generator = Mask: total patches 256, mask patches 179,
+)

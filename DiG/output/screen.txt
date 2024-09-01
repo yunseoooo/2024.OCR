@@ -1,0 +1,878 @@
+Transform = 
+Resize(size=(32, 128), interpolation=bicubic, max_size=None, antialias=None)
+ToTensor()
+Normalize(mean=0.5, std=0.5)
+---------------------------
+Number of the class = 97
+Transform = 
+Resize(size=(32, 128), interpolation=bicubic, max_size=None, antialias=None)
+ToTensor()
+Normalize(mean=0.5, std=0.5)
+---------------------------
+Number of the class = 97
+Sampler_train = <torch.utils.data.distributed.DistributedSampler object at 0x7ff767f56250>
+Patch size = (4, 4)
+Load ckpt from checkpoint/pretrain/checkpoint-9.pth
+Load state_dict by model_key = model
+Weights of RecModel not initialized from pretrained model: ['encoder.norm.weight', 'encoder.norm.bias', 'decoder.trg_word_emb.weight', 'decoder.position_enc.position_table', 'decoder.layer_stack.0.self_attn.linear_q.weight', 'decoder.layer_stack.0.self_attn.linear_k.weight', 'decoder.layer_stack.0.self_attn.linear_v.weight', 'decoder.layer_stack.0.self_attn.fc.weight', 'decoder.layer_stack.0.norm1.weight', 'decoder.layer_stack.0.norm1.bias', 'decoder.layer_stack.0.norm2.weight', 'decoder.layer_stack.0.norm2.bias', 'decoder.layer_stack.0.norm3.weight', 'decoder.layer_stack.0.norm3.bias', 'decoder.layer_stack.0.enc_attn.linear_q.weight', 'decoder.layer_stack.0.enc_attn.linear_k.weight', 'decoder.layer_stack.0.enc_attn.linear_v.weight', 'decoder.layer_stack.0.enc_attn.fc.weight', 'decoder.layer_stack.0.mlp.w_1.weight', 'decoder.layer_stack.0.mlp.w_1.bias', 'decoder.layer_stack.0.mlp.w_2.weight', 'decoder.layer_stack.0.mlp.w_2.bias', 'decoder.layer_stack.1.self_attn.linear_q.weight', 'decoder.layer_stack.1.self_attn.linear_k.weight', 'decoder.layer_stack.1.self_attn.linear_v.weight', 'decoder.layer_stack.1.self_attn.fc.weight', 'decoder.layer_stack.1.norm1.weight', 'decoder.layer_stack.1.norm1.bias', 'decoder.layer_stack.1.norm2.weight', 'decoder.layer_stack.1.norm2.bias', 'decoder.layer_stack.1.norm3.weight', 'decoder.layer_stack.1.norm3.bias', 'decoder.layer_stack.1.enc_attn.linear_q.weight', 'decoder.layer_stack.1.enc_attn.linear_k.weight', 'decoder.layer_stack.1.enc_attn.linear_v.weight', 'decoder.layer_stack.1.enc_attn.fc.weight', 'decoder.layer_stack.1.mlp.w_1.weight', 'decoder.layer_stack.1.mlp.w_1.bias', 'decoder.layer_stack.1.mlp.w_2.weight', 'decoder.layer_stack.1.mlp.w_2.bias', 'decoder.layer_stack.2.self_attn.linear_q.weight', 'decoder.layer_stack.2.self_attn.linear_k.weight', 'decoder.layer_stack.2.self_attn.linear_v.weight', 'decoder.layer_stack.2.self_attn.fc.weight', 'decoder.layer_stack.2.norm1.weight', 'decoder.layer_stack.2.norm1.bias', 'decoder.layer_stack.2.norm2.weight', 'decoder.layer_stack.2.norm2.bias', 'decoder.layer_stack.2.norm3.weight', 'decoder.layer_stack.2.norm3.bias', 'decoder.layer_stack.2.enc_attn.linear_q.weight', 'decoder.layer_stack.2.enc_attn.linear_k.weight', 'decoder.layer_stack.2.enc_attn.linear_v.weight', 'decoder.layer_stack.2.enc_attn.fc.weight', 'decoder.layer_stack.2.mlp.w_1.weight', 'decoder.layer_stack.2.mlp.w_1.bias', 'decoder.layer_stack.2.mlp.w_2.weight', 'decoder.layer_stack.2.mlp.w_2.bias', 'decoder.layer_stack.3.self_attn.linear_q.weight', 'decoder.layer_stack.3.self_attn.linear_k.weight', 'decoder.layer_stack.3.self_attn.linear_v.weight', 'decoder.layer_stack.3.self_attn.fc.weight', 'decoder.layer_stack.3.norm1.weight', 'decoder.layer_stack.3.norm1.bias', 'decoder.layer_stack.3.norm2.weight', 'decoder.layer_stack.3.norm2.bias', 'decoder.layer_stack.3.norm3.weight', 'decoder.layer_stack.3.norm3.bias', 'decoder.layer_stack.3.enc_attn.linear_q.weight', 'decoder.layer_stack.3.enc_attn.linear_k.weight', 'decoder.layer_stack.3.enc_attn.linear_v.weight', 'decoder.layer_stack.3.enc_attn.fc.weight', 'decoder.layer_stack.3.mlp.w_1.weight', 'decoder.layer_stack.3.mlp.w_1.bias', 'decoder.layer_stack.3.mlp.w_2.weight', 'decoder.layer_stack.3.mlp.w_2.bias', 'decoder.layer_stack.4.self_attn.linear_q.weight', 'decoder.layer_stack.4.self_attn.linear_k.weight', 'decoder.layer_stack.4.self_attn.linear_v.weight', 'decoder.layer_stack.4.self_attn.fc.weight', 'decoder.layer_stack.4.norm1.weight', 'decoder.layer_stack.4.norm1.bias', 'decoder.layer_stack.4.norm2.weight', 'decoder.layer_stack.4.norm2.bias', 'decoder.layer_stack.4.norm3.weight', 'decoder.layer_stack.4.norm3.bias', 'decoder.layer_stack.4.enc_attn.linear_q.weight', 'decoder.layer_stack.4.enc_attn.linear_k.weight', 'decoder.layer_stack.4.enc_attn.linear_v.weight', 'decoder.layer_stack.4.enc_attn.fc.weight', 'decoder.layer_stack.4.mlp.w_1.weight', 'decoder.layer_stack.4.mlp.w_1.bias', 'decoder.layer_stack.4.mlp.w_2.weight', 'decoder.layer_stack.4.mlp.w_2.bias', 'decoder.layer_stack.5.self_attn.linear_q.weight', 'decoder.layer_stack.5.self_attn.linear_k.weight', 'decoder.layer_stack.5.self_attn.linear_v.weight', 'decoder.layer_stack.5.self_attn.fc.weight', 'decoder.layer_stack.5.norm1.weight', 'decoder.layer_stack.5.norm1.bias', 'decoder.layer_stack.5.norm2.weight', 'decoder.layer_stack.5.norm2.bias', 'decoder.layer_stack.5.norm3.weight', 'decoder.layer_stack.5.norm3.bias', 'decoder.layer_stack.5.enc_attn.linear_q.weight', 'decoder.layer_stack.5.enc_attn.linear_k.weight', 'decoder.layer_stack.5.enc_attn.linear_v.weight', 'decoder.layer_stack.5.enc_attn.fc.weight', 'decoder.layer_stack.5.mlp.w_1.weight', 'decoder.layer_stack.5.mlp.w_1.bias', 'decoder.layer_stack.5.mlp.w_2.weight', 'decoder.layer_stack.5.mlp.w_2.bias', 'decoder.layer_norm.weight', 'decoder.layer_norm.bias', 'decoder.classifier.weight', 'decoder.classifier.bias', 'linear_norm.0.weight', 'linear_norm.0.bias', 'linear_norm.1.weight', 'linear_norm.1.bias', 'patch_embed.proj.weight', 'patch_embed.proj.bias']
+Weights from pretrained model not used in RecModel: ['momentum_encoder.mask_token', 'momentum_encoder.patch_embed.proj.weight', 'momentum_encoder.patch_embed.proj.bias', 'momentum_encoder.blocks.0.norm1.weight', 'momentum_encoder.blocks.0.norm1.bias', 'momentum_encoder.blocks.0.attn.q_bias', 'momentum_encoder.blocks.0.attn.v_bias', 'momentum_encoder.blocks.0.attn.qkv.weight', 'momentum_encoder.blocks.0.attn.proj.weight', 'momentum_encoder.blocks.0.attn.proj.bias', 'momentum_encoder.blocks.0.norm2.weight', 'momentum_encoder.blocks.0.norm2.bias', 'momentum_encoder.blocks.0.mlp.fc1.weight', 'momentum_encoder.blocks.0.mlp.fc1.bias', 'momentum_encoder.blocks.0.mlp.fc2.weight', 'momentum_encoder.blocks.0.mlp.fc2.bias', 'momentum_encoder.blocks.1.norm1.weight', 'momentum_encoder.blocks.1.norm1.bias', 'momentum_encoder.blocks.1.attn.q_bias', 'momentum_encoder.blocks.1.attn.v_bias', 'momentum_encoder.blocks.1.attn.qkv.weight', 'momentum_encoder.blocks.1.attn.proj.weight', 'momentum_encoder.blocks.1.attn.proj.bias', 'momentum_encoder.blocks.1.norm2.weight', 'momentum_encoder.blocks.1.norm2.bias', 'momentum_encoder.blocks.1.mlp.fc1.weight', 'momentum_encoder.blocks.1.mlp.fc1.bias', 'momentum_encoder.blocks.1.mlp.fc2.weight', 'momentum_encoder.blocks.1.mlp.fc2.bias', 'momentum_encoder.blocks.2.norm1.weight', 'momentum_encoder.blocks.2.norm1.bias', 'momentum_encoder.blocks.2.attn.q_bias', 'momentum_encoder.blocks.2.attn.v_bias', 'momentum_encoder.blocks.2.attn.qkv.weight', 'momentum_encoder.blocks.2.attn.proj.weight', 'momentum_encoder.blocks.2.attn.proj.bias', 'momentum_encoder.blocks.2.norm2.weight', 'momentum_encoder.blocks.2.norm2.bias', 'momentum_encoder.blocks.2.mlp.fc1.weight', 'momentum_encoder.blocks.2.mlp.fc1.bias', 'momentum_encoder.blocks.2.mlp.fc2.weight', 'momentum_encoder.blocks.2.mlp.fc2.bias', 'momentum_encoder.blocks.3.norm1.weight', 'momentum_encoder.blocks.3.norm1.bias', 'momentum_encoder.blocks.3.attn.q_bias', 'momentum_encoder.blocks.3.attn.v_bias', 'momentum_encoder.blocks.3.attn.qkv.weight', 'momentum_encoder.blocks.3.attn.proj.weight', 'momentum_encoder.blocks.3.attn.proj.bias', 'momentum_encoder.blocks.3.norm2.weight', 'momentum_encoder.blocks.3.norm2.bias', 'momentum_encoder.blocks.3.mlp.fc1.weight', 'momentum_encoder.blocks.3.mlp.fc1.bias', 'momentum_encoder.blocks.3.mlp.fc2.weight', 'momentum_encoder.blocks.3.mlp.fc2.bias', 'momentum_encoder.blocks.4.norm1.weight', 'momentum_encoder.blocks.4.norm1.bias', 'momentum_encoder.blocks.4.attn.q_bias', 'momentum_encoder.blocks.4.attn.v_bias', 'momentum_encoder.blocks.4.attn.qkv.weight', 'momentum_encoder.blocks.4.attn.proj.weight', 'momentum_encoder.blocks.4.attn.proj.bias', 'momentum_encoder.blocks.4.norm2.weight', 'momentum_encoder.blocks.4.norm2.bias', 'momentum_encoder.blocks.4.mlp.fc1.weight', 'momentum_encoder.blocks.4.mlp.fc1.bias', 'momentum_encoder.blocks.4.mlp.fc2.weight', 'momentum_encoder.blocks.4.mlp.fc2.bias', 'momentum_encoder.blocks.5.norm1.weight', 'momentum_encoder.blocks.5.norm1.bias', 'momentum_encoder.blocks.5.attn.q_bias', 'momentum_encoder.blocks.5.attn.v_bias', 'momentum_encoder.blocks.5.attn.qkv.weight', 'momentum_encoder.blocks.5.attn.proj.weight', 'momentum_encoder.blocks.5.attn.proj.bias', 'momentum_encoder.blocks.5.norm2.weight', 'momentum_encoder.blocks.5.norm2.bias', 'momentum_encoder.blocks.5.mlp.fc1.weight', 'momentum_encoder.blocks.5.mlp.fc1.bias', 'momentum_encoder.blocks.5.mlp.fc2.weight', 'momentum_encoder.blocks.5.mlp.fc2.bias', 'momentum_encoder.blocks.6.norm1.weight', 'momentum_encoder.blocks.6.norm1.bias', 'momentum_encoder.blocks.6.attn.q_bias', 'momentum_encoder.blocks.6.attn.v_bias', 'momentum_encoder.blocks.6.attn.qkv.weight', 'momentum_encoder.blocks.6.attn.proj.weight', 'momentum_encoder.blocks.6.attn.proj.bias', 'momentum_encoder.blocks.6.norm2.weight', 'momentum_encoder.blocks.6.norm2.bias', 'momentum_encoder.blocks.6.mlp.fc1.weight', 'momentum_encoder.blocks.6.mlp.fc1.bias', 'momentum_encoder.blocks.6.mlp.fc2.weight', 'momentum_encoder.blocks.6.mlp.fc2.bias', 'momentum_encoder.blocks.7.norm1.weight', 'momentum_encoder.blocks.7.norm1.bias', 'momentum_encoder.blocks.7.attn.q_bias', 'momentum_encoder.blocks.7.attn.v_bias', 'momentum_encoder.blocks.7.attn.qkv.weight', 'momentum_encoder.blocks.7.attn.proj.weight', 'momentum_encoder.blocks.7.attn.proj.bias', 'momentum_encoder.blocks.7.norm2.weight', 'momentum_encoder.blocks.7.norm2.bias', 'momentum_encoder.blocks.7.mlp.fc1.weight', 'momentum_encoder.blocks.7.mlp.fc1.bias', 'momentum_encoder.blocks.7.mlp.fc2.weight', 'momentum_encoder.blocks.7.mlp.fc2.bias', 'momentum_encoder.blocks.8.norm1.weight', 'momentum_encoder.blocks.8.norm1.bias', 'momentum_encoder.blocks.8.attn.q_bias', 'momentum_encoder.blocks.8.attn.v_bias', 'momentum_encoder.blocks.8.attn.qkv.weight', 'momentum_encoder.blocks.8.attn.proj.weight', 'momentum_encoder.blocks.8.attn.proj.bias', 'momentum_encoder.blocks.8.norm2.weight', 'momentum_encoder.blocks.8.norm2.bias', 'momentum_encoder.blocks.8.mlp.fc1.weight', 'momentum_encoder.blocks.8.mlp.fc1.bias', 'momentum_encoder.blocks.8.mlp.fc2.weight', 'momentum_encoder.blocks.8.mlp.fc2.bias', 'momentum_encoder.blocks.9.norm1.weight', 'momentum_encoder.blocks.9.norm1.bias', 'momentum_encoder.blocks.9.attn.q_bias', 'momentum_encoder.blocks.9.attn.v_bias', 'momentum_encoder.blocks.9.attn.qkv.weight', 'momentum_encoder.blocks.9.attn.proj.weight', 'momentum_encoder.blocks.9.attn.proj.bias', 'momentum_encoder.blocks.9.norm2.weight', 'momentum_encoder.blocks.9.norm2.bias', 'momentum_encoder.blocks.9.mlp.fc1.weight', 'momentum_encoder.blocks.9.mlp.fc1.bias', 'momentum_encoder.blocks.9.mlp.fc2.weight', 'momentum_encoder.blocks.9.mlp.fc2.bias', 'momentum_encoder.blocks.10.norm1.weight', 'momentum_encoder.blocks.10.norm1.bias', 'momentum_encoder.blocks.10.attn.q_bias', 'momentum_encoder.blocks.10.attn.v_bias', 'momentum_encoder.blocks.10.attn.qkv.weight', 'momentum_encoder.blocks.10.attn.proj.weight', 'momentum_encoder.blocks.10.attn.proj.bias', 'momentum_encoder.blocks.10.norm2.weight', 'momentum_encoder.blocks.10.norm2.bias', 'momentum_encoder.blocks.10.mlp.fc1.weight', 'momentum_encoder.blocks.10.mlp.fc1.bias', 'momentum_encoder.blocks.10.mlp.fc2.weight', 'momentum_encoder.blocks.10.mlp.fc2.bias', 'momentum_encoder.blocks.11.norm1.weight', 'momentum_encoder.blocks.11.norm1.bias', 'momentum_encoder.blocks.11.attn.q_bias', 'momentum_encoder.blocks.11.attn.v_bias', 'momentum_encoder.blocks.11.attn.qkv.weight', 'momentum_encoder.blocks.11.attn.proj.weight', 'momentum_encoder.blocks.11.attn.proj.bias', 'momentum_encoder.blocks.11.norm2.weight', 'momentum_encoder.blocks.11.norm2.bias', 'momentum_encoder.blocks.11.mlp.fc1.weight', 'momentum_encoder.blocks.11.mlp.fc1.bias', 'momentum_encoder.blocks.11.mlp.fc2.weight', 'momentum_encoder.blocks.11.mlp.fc2.bias', 'encoder_projection_layer.0.weight', 'encoder_projection_layer.1.weight', 'encoder_projection_layer.1.bias', 'encoder_projection_layer.1.running_mean', 'encoder_projection_layer.1.running_var', 'encoder_projection_layer.1.num_batches_tracked', 'encoder_projection_layer.3.weight', 'encoder_projection_layer.4.weight', 'encoder_projection_layer.4.bias', 'encoder_projection_layer.4.running_mean', 'encoder_projection_layer.4.running_var', 'encoder_projection_layer.4.num_batches_tracked', 'encoder_projection_layer.6.weight', 'encoder_projection_layer.7.running_mean', 'encoder_projection_layer.7.running_var', 'encoder_projection_layer.7.num_batches_tracked', 'momentum_projection_layer.0.weight', 'momentum_projection_layer.1.weight', 'momentum_projection_layer.1.bias', 'momentum_projection_layer.1.running_mean', 'momentum_projection_layer.1.running_var', 'momentum_projection_layer.1.num_batches_tracked', 'momentum_projection_layer.3.weight', 'momentum_projection_layer.4.weight', 'momentum_projection_layer.4.bias', 'momentum_projection_layer.4.running_mean', 'momentum_projection_layer.4.running_var', 'momentum_projection_layer.4.num_batches_tracked', 'momentum_projection_layer.6.weight', 'momentum_projection_layer.7.running_mean', 'momentum_projection_layer.7.running_var', 'momentum_projection_layer.7.num_batches_tracked', 'predictor.0.weight', 'predictor.1.weight', 'predictor.1.bias', 'predictor.1.running_mean', 'predictor.1.running_var', 'predictor.1.num_batches_tracked', 'predictor.3.weight', 'predictor.4.running_mean', 'predictor.4.running_var', 'predictor.4.num_batches_tracked', 'pix_projector.0.weight', 'pix_projector.1.weight', 'pix_projector.1.bias', 'pix_projector.1.running_mean', 'pix_projector.1.running_var', 'pix_projector.1.num_batches_tracked', 'pix_projector.3.weight', 'pix_projector.4.weight', 'pix_projector.4.bias', 'pix_projector.4.running_mean', 'pix_projector.4.running_var', 'pix_projector.4.num_batches_tracked', 'pix_projector.6.weight', 'pix_projector.7.running_mean', 'pix_projector.7.running_var', 'pix_projector.7.num_batches_tracked', 'pix_projector_m.0.weight', 'pix_projector_m.1.weight', 'pix_projector_m.1.bias', 'pix_projector_m.1.running_mean', 'pix_projector_m.1.running_var', 'pix_projector_m.1.num_batches_tracked', 'pix_projector_m.3.weight', 'pix_projector_m.4.weight', 'pix_projector_m.4.bias', 'pix_projector_m.4.running_mean', 'pix_projector_m.4.running_var', 'pix_projector_m.4.num_batches_tracked', 'pix_projector_m.6.weight', 'pix_projector_m.7.running_mean', 'pix_projector_m.7.running_var', 'pix_projector_m.7.num_batches_tracked', 'pix_decoder.0.weight', 'pix_decoder.1.weight', 'pix_decoder.2.weight', 'pix_decoder.2.bias', 'pix_decoder.4.weight', 'pix_decoder.4.bias']
+Model = RecModel(
+  (encoder): PretrainVisionTransformerEncoder(
+    (patch_embed): PatchEmbed(
+      (proj): Conv2d(3, 384, kernel_size=(4, 4), stride=(4, 4))
+    )
+    (blocks): ModuleList(
+      (0): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): Identity()
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (1): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.00909090880304575)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (2): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.0181818176060915)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (3): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.027272727340459824)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (4): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.036363635212183)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (5): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.045454543083906174)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (6): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.054545458406209946)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (7): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.06363636255264282)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (8): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.0727272778749466)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (9): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.08181818574666977)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (10): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.09090909361839294)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (11): Block(
+        (norm1): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (attn): Attention(
+          (qkv): Linear(in_features=384, out_features=1152, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj): Linear(in_features=384, out_features=384, bias=True)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (drop_path): DropPath(p=0.10000000149011612)
+        (norm2): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+        (mlp): Mlp(
+          (fc1): Linear(in_features=384, out_features=1536, bias=True)
+          (act): GELU()
+          (fc2): Linear(in_features=1536, out_features=384, bias=True)
+          (drop): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (norm): LayerNorm((384,), eps=1e-06, elementwise_affine=True)
+    (head): Identity()
+  )
+  (decoder): TFDecoder(
+    (trg_word_emb): Embedding(98, 512)
+    (position_enc): PositionalEncoding()
+    (dropout): Dropout(p=0.1, inplace=False)
+    (layer_stack): ModuleList(
+      (0): TransformerDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (enc_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (mlp): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=256, bias=True)
+          (w_2): Linear(in_features=256, out_features=512, bias=True)
+          (act): GELU()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (1): TransformerDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (enc_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (mlp): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=256, bias=True)
+          (w_2): Linear(in_features=256, out_features=512, bias=True)
+          (act): GELU()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (2): TransformerDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (enc_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (mlp): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=256, bias=True)
+          (w_2): Linear(in_features=256, out_features=512, bias=True)
+          (act): GELU()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (3): TransformerDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (enc_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (mlp): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=256, bias=True)
+          (w_2): Linear(in_features=256, out_features=512, bias=True)
+          (act): GELU()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (4): TransformerDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (enc_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (mlp): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=256, bias=True)
+          (w_2): Linear(in_features=256, out_features=512, bias=True)
+          (act): GELU()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+      (5): TransformerDecoderLayer(
+        (self_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (norm3): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (enc_attn): MultiHeadAttention(
+          (linear_q): Linear(in_features=512, out_features=512, bias=False)
+          (linear_k): Linear(in_features=512, out_features=512, bias=False)
+          (linear_v): Linear(in_features=512, out_features=512, bias=False)
+          (fc): Linear(in_features=512, out_features=512, bias=False)
+          (attn_drop): Dropout(p=0.1, inplace=False)
+          (proj_drop): Dropout(p=0.1, inplace=False)
+        )
+        (mlp): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=256, bias=True)
+          (w_2): Linear(in_features=256, out_features=512, bias=True)
+          (act): GELU()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+    (classifier): Linear(in_features=512, out_features=97, bias=True)
+  )
+  (linear_norm): Sequential(
+    (0): Linear(in_features=384, out_features=512, bias=True)
+    (1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+  )
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 384, kernel_size=(4, 4), stride=(4, 4))
+  )
+)
+number of params: 35786849
+LR = 0.00000313
+Batch size = 8
+Update frequent = 1
+Number of training examples = 15003
+Number of training training per epoch = 1875
+Assigned values = [0.023757264018058777, 0.03167635202407837, 0.04223513603210449, 0.056313514709472656, 0.07508468627929688, 0.1001129150390625, 0.13348388671875, 0.177978515625, 0.2373046875, 0.31640625, 0.421875, 0.5625, 0.75, 1.0]
+Skip weight decay list:  {'encoder.cls_token', 'encoder.pos_embed'}
+these layers are fixed during training:  []
+Param groups = {
+  "layer_0_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.mask_token",
+      "encoder.patch_embed.proj.weight"
+    ],
+    "lr_scale": 0.023757264018058777
+  },
+  "layer_0_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.patch_embed.proj.bias"
+    ],
+    "lr_scale": 0.023757264018058777
+  },
+  "layer_1_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.0.norm1.weight",
+      "encoder.blocks.0.norm1.bias",
+      "encoder.blocks.0.attn.q_bias",
+      "encoder.blocks.0.attn.v_bias",
+      "encoder.blocks.0.attn.proj.bias",
+      "encoder.blocks.0.norm2.weight",
+      "encoder.blocks.0.norm2.bias",
+      "encoder.blocks.0.mlp.fc1.bias",
+      "encoder.blocks.0.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.03167635202407837
+  },
+  "layer_1_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.0.attn.qkv.weight",
+      "encoder.blocks.0.attn.proj.weight",
+      "encoder.blocks.0.mlp.fc1.weight",
+      "encoder.blocks.0.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.03167635202407837
+  },
+  "layer_2_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.1.norm1.weight",
+      "encoder.blocks.1.norm1.bias",
+      "encoder.blocks.1.attn.q_bias",
+      "encoder.blocks.1.attn.v_bias",
+      "encoder.blocks.1.attn.proj.bias",
+      "encoder.blocks.1.norm2.weight",
+      "encoder.blocks.1.norm2.bias",
+      "encoder.blocks.1.mlp.fc1.bias",
+      "encoder.blocks.1.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.04223513603210449
+  },
+  "layer_2_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.1.attn.qkv.weight",
+      "encoder.blocks.1.attn.proj.weight",
+      "encoder.blocks.1.mlp.fc1.weight",
+      "encoder.blocks.1.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.04223513603210449
+  },
+  "layer_3_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.2.norm1.weight",
+      "encoder.blocks.2.norm1.bias",
+      "encoder.blocks.2.attn.q_bias",
+      "encoder.blocks.2.attn.v_bias",
+      "encoder.blocks.2.attn.proj.bias",
+      "encoder.blocks.2.norm2.weight",
+      "encoder.blocks.2.norm2.bias",
+      "encoder.blocks.2.mlp.fc1.bias",
+      "encoder.blocks.2.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.056313514709472656
+  },
+  "layer_3_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.2.attn.qkv.weight",
+      "encoder.blocks.2.attn.proj.weight",
+      "encoder.blocks.2.mlp.fc1.weight",
+      "encoder.blocks.2.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.056313514709472656
+  },
+  "layer_4_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.3.norm1.weight",
+      "encoder.blocks.3.norm1.bias",
+      "encoder.blocks.3.attn.q_bias",
+      "encoder.blocks.3.attn.v_bias",
+      "encoder.blocks.3.attn.proj.bias",
+      "encoder.blocks.3.norm2.weight",
+      "encoder.blocks.3.norm2.bias",
+      "encoder.blocks.3.mlp.fc1.bias",
+      "encoder.blocks.3.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.07508468627929688
+  },
+  "layer_4_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.3.attn.qkv.weight",
+      "encoder.blocks.3.attn.proj.weight",
+      "encoder.blocks.3.mlp.fc1.weight",
+      "encoder.blocks.3.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.07508468627929688
+  },
+  "layer_5_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.4.norm1.weight",
+      "encoder.blocks.4.norm1.bias",
+      "encoder.blocks.4.attn.q_bias",
+      "encoder.blocks.4.attn.v_bias",
+      "encoder.blocks.4.attn.proj.bias",
+      "encoder.blocks.4.norm2.weight",
+      "encoder.blocks.4.norm2.bias",
+      "encoder.blocks.4.mlp.fc1.bias",
+      "encoder.blocks.4.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.1001129150390625
+  },
+  "layer_5_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.4.attn.qkv.weight",
+      "encoder.blocks.4.attn.proj.weight",
+      "encoder.blocks.4.mlp.fc1.weight",
+      "encoder.blocks.4.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.1001129150390625
+  },
+  "layer_6_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.5.norm1.weight",
+      "encoder.blocks.5.norm1.bias",
+      "encoder.blocks.5.attn.q_bias",
+      "encoder.blocks.5.attn.v_bias",
+      "encoder.blocks.5.attn.proj.bias",
+      "encoder.blocks.5.norm2.weight",
+      "encoder.blocks.5.norm2.bias",
+      "encoder.blocks.5.mlp.fc1.bias",
+      "encoder.blocks.5.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.13348388671875
+  },
+  "layer_6_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.5.attn.qkv.weight",
+      "encoder.blocks.5.attn.proj.weight",
+      "encoder.blocks.5.mlp.fc1.weight",
+      "encoder.blocks.5.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.13348388671875
+  },
+  "layer_7_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.6.norm1.weight",
+      "encoder.blocks.6.norm1.bias",
+      "encoder.blocks.6.attn.q_bias",
+      "encoder.blocks.6.attn.v_bias",
+      "encoder.blocks.6.attn.proj.bias",
+      "encoder.blocks.6.norm2.weight",
+      "encoder.blocks.6.norm2.bias",
+      "encoder.blocks.6.mlp.fc1.bias",
+      "encoder.blocks.6.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.177978515625
+  },
+  "layer_7_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.6.attn.qkv.weight",
+      "encoder.blocks.6.attn.proj.weight",
+      "encoder.blocks.6.mlp.fc1.weight",
+      "encoder.blocks.6.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.177978515625
+  },
+  "layer_8_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.7.norm1.weight",
+      "encoder.blocks.7.norm1.bias",
+      "encoder.blocks.7.attn.q_bias",
+      "encoder.blocks.7.attn.v_bias",
+      "encoder.blocks.7.attn.proj.bias",
+      "encoder.blocks.7.norm2.weight",
+      "encoder.blocks.7.norm2.bias",
+      "encoder.blocks.7.mlp.fc1.bias",
+      "encoder.blocks.7.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.2373046875
+  },
+  "layer_8_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.7.attn.qkv.weight",
+      "encoder.blocks.7.attn.proj.weight",
+      "encoder.blocks.7.mlp.fc1.weight",
+      "encoder.blocks.7.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.2373046875
+  },
+  "layer_9_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.8.norm1.weight",
+      "encoder.blocks.8.norm1.bias",
+      "encoder.blocks.8.attn.q_bias",
+      "encoder.blocks.8.attn.v_bias",
+      "encoder.blocks.8.attn.proj.bias",
+      "encoder.blocks.8.norm2.weight",
+      "encoder.blocks.8.norm2.bias",
+      "encoder.blocks.8.mlp.fc1.bias",
+      "encoder.blocks.8.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.31640625
+  },
+  "layer_9_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.8.attn.qkv.weight",
+      "encoder.blocks.8.attn.proj.weight",
+      "encoder.blocks.8.mlp.fc1.weight",
+      "encoder.blocks.8.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.31640625
+  },
+  "layer_10_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.9.norm1.weight",
+      "encoder.blocks.9.norm1.bias",
+      "encoder.blocks.9.attn.q_bias",
+      "encoder.blocks.9.attn.v_bias",
+      "encoder.blocks.9.attn.proj.bias",
+      "encoder.blocks.9.norm2.weight",
+      "encoder.blocks.9.norm2.bias",
+      "encoder.blocks.9.mlp.fc1.bias",
+      "encoder.blocks.9.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.421875
+  },
+  "layer_10_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.9.attn.qkv.weight",
+      "encoder.blocks.9.attn.proj.weight",
+      "encoder.blocks.9.mlp.fc1.weight",
+      "encoder.blocks.9.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.421875
+  },
+  "layer_11_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.10.norm1.weight",
+      "encoder.blocks.10.norm1.bias",
+      "encoder.blocks.10.attn.q_bias",
+      "encoder.blocks.10.attn.v_bias",
+      "encoder.blocks.10.attn.proj.bias",
+      "encoder.blocks.10.norm2.weight",
+      "encoder.blocks.10.norm2.bias",
+      "encoder.blocks.10.mlp.fc1.bias",
+      "encoder.blocks.10.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.5625
+  },
+  "layer_11_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.10.attn.qkv.weight",
+      "encoder.blocks.10.attn.proj.weight",
+      "encoder.blocks.10.mlp.fc1.weight",
+      "encoder.blocks.10.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.5625
+  },
+  "layer_12_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.blocks.11.norm1.weight",
+      "encoder.blocks.11.norm1.bias",
+      "encoder.blocks.11.attn.q_bias",
+      "encoder.blocks.11.attn.v_bias",
+      "encoder.blocks.11.attn.proj.bias",
+      "encoder.blocks.11.norm2.weight",
+      "encoder.blocks.11.norm2.bias",
+      "encoder.blocks.11.mlp.fc1.bias",
+      "encoder.blocks.11.mlp.fc2.bias"
+    ],
+    "lr_scale": 0.75
+  },
+  "layer_12_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "encoder.blocks.11.attn.qkv.weight",
+      "encoder.blocks.11.attn.proj.weight",
+      "encoder.blocks.11.mlp.fc1.weight",
+      "encoder.blocks.11.mlp.fc2.weight"
+    ],
+    "lr_scale": 0.75
+  },
+  "layer_13_no_decay": {
+    "weight_decay": 0.0,
+    "params": [
+      "encoder.norm.weight",
+      "encoder.norm.bias",
+      "decoder.layer_stack.0.norm1.weight",
+      "decoder.layer_stack.0.norm1.bias",
+      "decoder.layer_stack.0.norm2.weight",
+      "decoder.layer_stack.0.norm2.bias",
+      "decoder.layer_stack.0.norm3.weight",
+      "decoder.layer_stack.0.norm3.bias",
+      "decoder.layer_stack.0.mlp.w_1.bias",
+      "decoder.layer_stack.0.mlp.w_2.bias",
+      "decoder.layer_stack.1.norm1.weight",
+      "decoder.layer_stack.1.norm1.bias",
+      "decoder.layer_stack.1.norm2.weight",
+      "decoder.layer_stack.1.norm2.bias",
+      "decoder.layer_stack.1.norm3.weight",
+      "decoder.layer_stack.1.norm3.bias",
+      "decoder.layer_stack.1.mlp.w_1.bias",
+      "decoder.layer_stack.1.mlp.w_2.bias",
+      "decoder.layer_stack.2.norm1.weight",
+      "decoder.layer_stack.2.norm1.bias",
+      "decoder.layer_stack.2.norm2.weight",
+      "decoder.layer_stack.2.norm2.bias",
+      "decoder.layer_stack.2.norm3.weight",
+      "decoder.layer_stack.2.norm3.bias",
+      "decoder.layer_stack.2.mlp.w_1.bias",
+      "decoder.layer_stack.2.mlp.w_2.bias",
+      "decoder.layer_stack.3.norm1.weight",
+      "decoder.layer_stack.3.norm1.bias",
+      "decoder.layer_stack.3.norm2.weight",
+      "decoder.layer_stack.3.norm2.bias",
+      "decoder.layer_stack.3.norm3.weight",
+      "decoder.layer_stack.3.norm3.bias",
+      "decoder.layer_stack.3.mlp.w_1.bias",
+      "decoder.layer_stack.3.mlp.w_2.bias",
+      "decoder.layer_stack.4.norm1.weight",
+      "decoder.layer_stack.4.norm1.bias",
+      "decoder.layer_stack.4.norm2.weight",
+      "decoder.layer_stack.4.norm2.bias",
+      "decoder.layer_stack.4.norm3.weight",
+      "decoder.layer_stack.4.norm3.bias",
+      "decoder.layer_stack.4.mlp.w_1.bias",
+      "decoder.layer_stack.4.mlp.w_2.bias",
+      "decoder.layer_stack.5.norm1.weight",
+      "decoder.layer_stack.5.norm1.bias",
+      "decoder.layer_stack.5.norm2.weight",
+      "decoder.layer_stack.5.norm2.bias",
+      "decoder.layer_stack.5.norm3.weight",
+      "decoder.layer_stack.5.norm3.bias",
+      "decoder.layer_stack.5.mlp.w_1.bias",
+      "decoder.layer_stack.5.mlp.w_2.bias",
+      "decoder.layer_norm.weight",
+      "decoder.layer_norm.bias",
+      "decoder.classifier.bias",
+      "linear_norm.0.bias",
+      "linear_norm.1.weight",
+      "linear_norm.1.bias"
+    ],
+    "lr_scale": 1.0
+  },
+  "layer_13_decay": {
+    "weight_decay": 0.05,
+    "params": [
+      "decoder.trg_word_emb.weight",
+      "decoder.layer_stack.0.self_attn.linear_q.weight",
+      "decoder.layer_stack.0.self_attn.linear_k.weight",
+      "decoder.layer_stack.0.self_attn.linear_v.weight",
+      "decoder.layer_stack.0.self_attn.fc.weight",
+      "decoder.layer_stack.0.enc_attn.linear_q.weight",
+      "decoder.layer_stack.0.enc_attn.linear_k.weight",
+      "decoder.layer_stack.0.enc_attn.linear_v.weight",
+      "decoder.layer_stack.0.enc_attn.fc.weight",
+      "decoder.layer_stack.0.mlp.w_1.weight",
+      "decoder.layer_stack.0.mlp.w_2.weight",
+      "decoder.layer_stack.1.self_attn.linear_q.weight",
+      "decoder.layer_stack.1.self_attn.linear_k.weight",
+      "decoder.layer_stack.1.self_attn.linear_v.weight",
+      "decoder.layer_stack.1.self_attn.fc.weight",
+      "decoder.layer_stack.1.enc_attn.linear_q.weight",
+      "decoder.layer_stack.1.enc_attn.linear_k.weight",
+      "decoder.layer_stack.1.enc_attn.linear_v.weight",
+      "decoder.layer_stack.1.enc_attn.fc.weight",
+      "decoder.layer_stack.1.mlp.w_1.weight",
+      "decoder.layer_stack.1.mlp.w_2.weight",
+      "decoder.layer_stack.2.self_attn.linear_q.weight",
+      "decoder.layer_stack.2.self_attn.linear_k.weight",
+      "decoder.layer_stack.2.self_attn.linear_v.weight",
+      "decoder.layer_stack.2.self_attn.fc.weight",
+      "decoder.layer_stack.2.enc_attn.linear_q.weight",
+      "decoder.layer_stack.2.enc_attn.linear_k.weight",
+      "decoder.layer_stack.2.enc_attn.linear_v.weight",
+      "decoder.layer_stack.2.enc_attn.fc.weight",
+      "decoder.layer_stack.2.mlp.w_1.weight",
+      "decoder.layer_stack.2.mlp.w_2.weight",
+      "decoder.layer_stack.3.self_attn.linear_q.weight",
+      "decoder.layer_stack.3.self_attn.linear_k.weight",
+      "decoder.layer_stack.3.self_attn.linear_v.weight",
+      "decoder.layer_stack.3.self_attn.fc.weight",
+      "decoder.layer_stack.3.enc_attn.linear_q.weight",
+      "decoder.layer_stack.3.enc_attn.linear_k.weight",
+      "decoder.layer_stack.3.enc_attn.linear_v.weight",
+      "decoder.layer_stack.3.enc_attn.fc.weight",
+      "decoder.layer_stack.3.mlp.w_1.weight",
+      "decoder.layer_stack.3.mlp.w_2.weight",
+      "decoder.layer_stack.4.self_attn.linear_q.weight",
+      "decoder.layer_stack.4.self_attn.linear_k.weight",
+      "decoder.layer_stack.4.self_attn.linear_v.weight",
+      "decoder.layer_stack.4.self_attn.fc.weight",
+      "decoder.layer_stack.4.enc_attn.linear_q.weight",
+      "decoder.layer_stack.4.enc_attn.linear_k.weight",
+      "decoder.layer_stack.4.enc_attn.linear_v.weight",
+      "decoder.layer_stack.4.enc_attn.fc.weight",
+      "decoder.layer_stack.4.mlp.w_1.weight",
+      "decoder.layer_stack.4.mlp.w_2.weight",
+      "decoder.layer_stack.5.self_attn.linear_q.weight",
+      "decoder.layer_stack.5.self_attn.linear_k.weight",
+      "decoder.layer_stack.5.self_attn.linear_v.weight",
+      "decoder.layer_stack.5.self_attn.fc.weight",
+      "decoder.layer_stack.5.enc_attn.linear_q.weight",
+      "decoder.layer_stack.5.enc_attn.linear_k.weight",
+      "decoder.layer_stack.5.enc_attn.linear_v.weight",
+      "decoder.layer_stack.5.enc_attn.fc.weight",
+      "decoder.layer_stack.5.mlp.w_1.weight",
+      "decoder.layer_stack.5.mlp.w_2.weight",
+      "decoder.classifier.weight",
+      "linear_norm.0.weight"
+    ],
+    "lr_scale": 1.0
+  }
+}
+optimizer settings: {'lr': 3.125e-06, 'weight_decay': 0.0, 'eps': 1e-08, 'betas': [0.9, 0.999]}
+Use step level LR scheduler!
+Set warmup steps = 1875
+Set warmup steps = 0
+Max WD = 0.0500000, Min WD = 0.0500000
+criterion = SeqCrossEntropyLoss()
+Auto resume checkpoint: 
+Start training for 50 epochs
+[2024-07-15 13:54:09]  Epoch: [0]  [   0/1875]  eta: 0:56:30  lr: 0.000000  min_lr: 0.000000  loss: 21.0973 (21.0973)  class_acc: 0.0000 (0.0000)  loss_scale: 32768.0000 (32768.0000)  weight_decay: 0.0500 (0.0500)  grad_norm: inf (inf)  time: 1.8084  data: 1.6068  max mem: 1085
+[2024-07-15 13:54:17]  Epoch: [0]  [ 100/1875]  eta: 0:02:59  lr: 0.000000  min_lr: 0.000000  loss: 25.5572 (25.4141)  class_acc: 0.0000 (0.0000)  loss_scale: 16384.0000 (16546.2178)  weight_decay: 0.0500 (0.0500)  grad_norm: 40.8126 (inf)  time: 0.0853  data: 0.0001  max mem: 1505
